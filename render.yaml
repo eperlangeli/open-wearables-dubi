@@ -65,15 +65,10 @@ services:
           type: keyvalue
           name: openwearables-redis-staging
           property: port
-      - key: REDIS_PASSWORD
-        fromService:
-          type: keyvalue
-          name: openwearables-redis-staging
-          property: password
       - key: REDIS_DB
         value: 0
       - key: REDIS_SSL
-        value: true
+        value: false
       - key: STRAVA_CLIENT_ID
         sync: false
       - key: STRAVA_CLIENT_SECRET
@@ -138,15 +133,10 @@ services:
           type: keyvalue
           name: openwearables-redis-staging
           property: port
-      - key: REDIS_PASSWORD
-        fromService:
-          type: keyvalue
-          name: openwearables-redis-staging
-          property: password
       - key: REDIS_DB
         value: 0
       - key: REDIS_SSL
-        value: true
+        value: false
       - key: STRAVA_CLIENT_ID
         sync: false
       - key: STRAVA_CLIENT_SECRET
@@ -201,15 +191,10 @@ services:
           type: keyvalue
           name: openwearables-redis-staging
           property: port
-      - key: REDIS_PASSWORD
-        fromService:
-          type: keyvalue
-          name: openwearables-redis-staging
-          property: password
       - key: REDIS_DB
         value: 0
       - key: REDIS_SSL
-        value: true
+        value: false
 
   - type: keyvalue
     name: openwearables-redis-staging
@@ -222,4 +207,3 @@ databases:
     databaseName: openwearables
     user: openwearables
     region: frankfurt
-
